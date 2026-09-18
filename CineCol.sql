@@ -229,5 +229,5 @@ select p.titulo, p.director, p.anio_estreno, p.duracion, g.nombre_genero
 from Pelicula p
 left join Genero g on p.id_genero = g.id_genero
 where p.titulo like '%amor%'
-order by
+order by p.titulo;
 
